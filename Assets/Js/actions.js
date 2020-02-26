@@ -30,6 +30,10 @@ contact_us_submit.addEventListener('click', function(e){
 
     if ( item.value === '' ){
       errors.push(item.name);
+
+      item.classList.add('error');
+    } else {
+      item.classList.remove('error');      
     }
 
   });
@@ -40,6 +44,7 @@ contact_us_submit.addEventListener('click', function(e){
     let error_message_heading = document.createElement('p');
     let error_message_heading_text = document.createTextNode('De volgende veld(en) zijn verplicht:');
     error_message_heading.appendChild(error_message_heading_text);
+    error_message_heading.classList.add('error-message-heading');
 
     errors.forEach(function(item, i){
       let error_message_text = document.createTextNode(item);
@@ -57,6 +62,4 @@ contact_us_submit.addEventListener('click', function(e){
     document.forms['contact-us_form'].submit();
   }
 
-
 });
-
