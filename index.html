@@ -19,30 +19,31 @@
 				<p class="contact-us-content">Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
 			</div>
 			<div class="col col-2 contact-us-form">
-				<form>
+				<form id="contact-us_form" action="bedankt.html">
 					<label class="contact-us-label" for="voornaam"><strong class="contact-us-label-text">Voornaam</strong><span class="contact-us-required"> (verplicht)</span></label>
-					<input class="contact-us-field" type="text" placeholder="Voornaam" name="voornaam">
+					<input class="contact-us-field contact-us-required-field" type="text" placeholder="Voornaam" name="voornaam">
 					<label class="contact-us-label" for="achternaam"><strong class="contact-us-label-text">Achternaam</strong><span class="contact-us-required"> (verplicht)</span></label>
-					<input class="contact-us-field" type="text" placeholder="achternaam" name="achternaam">
+					<input class="contact-us-field contact-us-required-field" type="text" placeholder="achternaam" name="achternaam">
 					<label class="contact-us-label" for="email"><strong class="contact-us-label-text">Email</strong><span class="contact-us-required"> (verplicht)</span></label>
-					<input class="contact-us-field" type="text" placeholder="Enter Email" name="email" required>
+					<input class="contact-us-field contact-us-required-field" type="text" placeholder="Enter Email" name="email" required>
 
 					<div class="contact-us-options">
 						<label for="options">Selecteer een optie</label>
-						<select class="contact-us-field" id="options" name="options">
-							<option value="volvo">Optie A</option>
-							<option value="saab">Saab</option>
-							<option value="fiat">Fiat</option>
+						<select class="contact-us-field contact-us-required-field" id="options" name="options">
+							<option value="optie_a">Optie A</option>
+							<option value="optie_b">Optie B</option>
+							<option value="optie_c">Optie C</option>
 						</select>
 					</div>
 
-					<div class="hidee">
+					<div class="hide" id="optional-comments">
 						<label class="contact-us-label" for="opmerkingen"><strong class="contact-us-label-text">Opmerkingen</strong><span class="contact-us-required"> (niet verplicht)</span></label>
 						<textarea class="contact-us-field" name="opmerkingen" form="usrform"></textarea>
 					</div>
 
-					<button class="blue button">Verzend ></button>
+					<button class="blue button" id="contact-us-submit">Verzend ></button>
 
+					<div id="contact-us-show-errors"></div>
 				</form>
 			</div>
 		</div>
